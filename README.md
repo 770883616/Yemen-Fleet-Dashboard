@@ -1,76 +1,64 @@
-🚛 Yemen Fleet - نظام إدارة الشحن والخدمات اللوجستية
-<p align="center"> <img src="images/yemen_fleet_logo.png" width="400" alt="Yemen Fleet Logo"> </p>
-🌟 نظرة عامة على النظام
-Yemen Fleet هو نظام متكامل لإدارة عمليات الشحن وتوصيل الطلبات، يتكون من:
+# 🖥️ Yemen Fleet - لوحة تحكم الأدمن
 
-1️⃣ لوحة تحكم الشركات (Laravel)
-إدارة أساطيل الشاحنات والسائقين
+<p align="center">
+  <img src="images/logo.png" width="400" alt="Yemen Fleet Admin Logo">
+  <br>
+  <img src="https://img.shields.io/badge/Version-1.0.0-brightgreen" alt="Version">
+  <img src="https://img.shields.io/badge/Laravel-10.x-orange" alt="Laravel">
+  <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
+</p>
 
-متابعة الطلبات وتوزيعها على السائقين
+## 🌟 نظرة عامة
 
-إدارة المنتجات والعاملين
+لوحة تحكم إدارة نظام **Yemen Fleet** تمكن المسؤولين من:
+- 🔑 إدارة اشتراكات الشركات
+- 👨‍💼 التحكم في حسابات الشركات
+- 📊 مراقبة إحصائيات النظام
+- ⚙️ ضبط إعدادات النظام العامة
 
-2️⃣ تطبيق العملاء (Flutter)
-طلب المنتجات من التجار
+## 📸 لقطات من لوحة الأدمن
 
-تتبع الشحنات في الوقت الحقيقي
+<div align="center">
+  <h3>لوحة التحكم الرئيسية للأدمن</h3>
+  <img src="images/admin_dashboard.png" width="800" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  
+  <h3 style="margin-top: 30px;">إدارة الشركات</h3>
+  <table>
+    <tr>
+      <td><img src="images/companies_list.png" width="350" alt="قائمة الشركات"></td>
+      <td><img src="images/company_details.png" width="350" alt="تفاصيل الشركة"></td>
+    </tr>
+    <tr>
+      <td align="center">عرض جميع الشركات</td>
+      <td align="center">تفاصيل الشركة</td>
+    </tr>
+  </table>
+  
+  <h3 style="margin-top: 30px;">إدارة الاشتراكات</h3>
+  <img src="images/subscriptions.png" width="700" style="border-radius: 8px;">
+</div>
 
-تقييم الخدمات والتجار
+## 🛠️ التقنيات المستخدمة
 
-3️⃣ تطبيق السائقين (Flutter)
-استقبال الطلبات المخصصة له
-
-عرض مسارات التوصيل
-
-تحديث حالات الشحن
-
-4️⃣ لوحة تحكم الأدمن (Laravel)
-إدارة اشتراكات الشركات
-
-التحكم العام في النظام
-
-إحصاءات وأداء النظام
-
-📸 لقطات من النظام
-<div align="center"> <h3>لوحة تحكم الشركة</h3> <img src="images/company_dashboard.png" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> <table> <tr> <td><img src="images/customer_app.png" width="300" alt="تطبيق العملاء"></td> <td><img src="images/driver_app.png" width="300" alt="تطبيق السائقين"></td> </tr> <tr> <td align="center">تطبيق العملاء</td> <td align="center">تطبيق السائقين</td> </tr> </table> </div>
-🔧 التقنيات المستخدمة
-Diagram
-Code
-
-
-
-
-
-
-🚀 ميزات رئيسية
-للشركات:
-📊 لوحة تحكم شاملة للإدارة
-
-🚛 إدارة أسطول الشاحنات
-
-👥 إضافة وإدارة السائقين
-
-📦 متابعة الطلبات في الوقت الفعلي
-
-للعملاء:
-🛒 طلب منتجات من متاجر متعددة
-
-🗺️ تتبع موقع الشحنة
-
-⭐ تقييم الخدمة والتجار
-
-للسائقين:
-📱 واجهة سهلة للطلبات
-
-🗺️ خرائط التوصيل المباشرة
-
-🔄 تحديث حالة التسليم
-
-💻 كيفية التنصيب
+```mermaid
+graph TD
+  A[Laravel 10] --> B[Livewire]
+  A --> C[MySQL]
+  D[AdminLTE 3] --> A
+  A --> E[Chart.js]
+  A --> F[SPATIE Permissions]
+🔧 ميزات لوحة الأدمن
+الميزة	الوصف
+إدارة الشركات	إنشاء/تعديل/حذف حسابات الشركات
+الاشتراكات	إدارة باقات الاشتراك وتجديدها
+الإحصائيات	عرض إحصائيات النظام الكلية
+إعدادات النظام	تعديل الإعدادات العامة للنظام
+سجل الأحداث	تتبع جميع أنشطة المستخدمين
+🚀 كيفية التنصيب
 bash
-# استنساخ المشروع
+# استنساخ المستودع
 git clone https://github.com/770883616/Yemen-Fleet-Dashboard.git
-cd yemen-fleet
+cd Yemen-Fleet-Dashboard
 
 # تثبيت الاعتمادات
 composer install
@@ -80,5 +68,20 @@ php artisan key:generate
 
 # تنفيذ الهجرة
 php artisan migrate --seed
-📞 التواصل والدعم
-<p align="center"> <a href="mailto:support@yemenfleet.com"> <img src="https://img.shields.io/badge/Email-support%40yemenfleet.com-blue?style=for-the-badge&logo=gmail"> </a> <a href="tel:+967770883615"> <img src="https://img.shields.io/badge/Phone-%2B967770883615-green?style=for-the-badge&logo=whatsapp"> </a> </p><div align="center" style="margin-top: 40px;"> <sub>تم تطوير نظام Yemen Fleet بواسطة <a href="https://github.com/your-username" style="color: #2b7df8;">فريق التطوير</a> © 2024</sub> </div> ```
+
+# تشغيل الخادم
+php artisan serve
+📊 هيكل قاعدة البيانات
+Diagram
+Code
+
+
+
+
+
+
+
+
+
+📞 الدعم الفني
+<p align="center"> <a href="mailto:support@yemenfleet.com"> <img src="https://img.shields.io/badge/Email-support%40yemenfleet.com-blue?style=for-the-badge&logo=gmail"> </a> <a href="tel:+967770883615"> <img src="https://img.shields.io/badge/Phone-%2B967770883615-green?style=for-the-badge&logo=whatsapp"> </a> </p><div align="center" style="margin-top: 40px;"> <sub>تم تطوير نظام Yemen Fleet بواسطة <a href="https://github.com/770883616" style="color: #2b7df8;">AYMAN TAWFAQ</a> © 2024</sub> </div> ```
