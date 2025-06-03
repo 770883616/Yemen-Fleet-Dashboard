@@ -40,7 +40,7 @@
 
 ## 🛠️ التقنيات المستخدمة
 
-```mermaid
+mermaid
 graph TD
   A[Laravel 10] --> B[Livewire]
   A --> C[MySQL]
